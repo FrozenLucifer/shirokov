@@ -1,0 +1,20 @@
+.list_link{
+    font-size: 24px;
+    padding: 21px;
+    display: inline-block;
+    text-decoration: none;
+    color: #A0A;
+
+}
+.list_link:hover{
+    color:royalblue;
+    transform: scale(1.2);
+}
+.text{
+    border-radius: 20px;
+    border: 2px solid black;
+}
+.list{
+    list-style-type: none;
+    background-color: rgb(206, 93, 93);
+}
