@@ -1,20 +1,45 @@
-.list_link{
-    font-size: 24px;
-    padding: 21px;
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap');
+
+
+body{
+    background-color:  #EDF5E1;
+}
+
+.text_normal{
+    color:#05386B;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.list_menu_link{
+    font-size: 48px;
+    padding: 16px;
+    font-family: 'IBM Plex Serif', serif;
     display: inline-block;
     text-decoration: none;
-    color: #A0A;
+    color: #05386B;
 
 }
-.list_link:hover{
-    color:royalblue;
-    transform: scale(1.2);
+.list_menu_link:hover{
+    color:#379683;
+    transform: scale(1.1);
 }
-.text{
-    border-radius: 20px;
-    border: 2px solid black;
-}
-.list{
+
+.list_menu{
     list-style-type: none;
-    background-color: rgb(206, 93, 93);
+    background-color:  #5CDB95;
 }
+
+
+
+.list_menu_link_test{
+    font-size: 48px;
+    padding: 16px;
+    font-family: 'IBM Plex Serif', serif;
+    display: inline-block;
+    text-decoration: none;
+    color: #05386B;
+} 
+
+
+
+
