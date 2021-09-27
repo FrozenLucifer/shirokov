@@ -10,36 +10,47 @@ body{
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
-.list_menu_link{
+.header a{
     font-size: 48px;
     padding: 16px;
-    font-family: 'IBM Plex Serif', serif;
     display: inline-block;
     text-decoration: none;
     color: #05386B;
-
+    padding-bottom: 0px;
 }
-.list_menu_link:hover{
+.header a:hover{
     color:#379683;
     transform: scale(1.1);
 }
 
-.list_menu{
+.header{
+    position: relative;
+    text-align: right;
     list-style-type: none;
     background-color:  #5CDB95;
+    font-family: 'IBM Plex Serif', serif;
 }
 
+.header img{
+    position: absolute;
+    top: 8%;
+    left: 8px;
+    border: 3px #05386B solid;
+    border-radius: 80px;
+    width: 65px;
+}
 
-
-.list_menu_link_test{
-    font-size: 48px;
-    padding: 16px;
-    font-family: 'IBM Plex Serif', serif;
+.header li{
     display: inline-block;
-    text-decoration: none;
-    color: #05386B;
-} 
+}
 
-
+footer{
+    background-color:  #5CDB95;
+    height: 75px;
+    font-size: 20px;
+    line-height: 100px;
+    text-align: center;
+    font-family: 'IBM Plex Serif', serif;
+}
 
 

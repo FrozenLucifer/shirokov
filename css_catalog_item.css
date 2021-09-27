@@ -1,0 +1,51 @@
+.item div.main{
+    display: inline-block;
+    height: 500px;
+    width:800px
+}
+
+.item img{
+    border: 10px transparent
+     solid;
+    float: left;
+    width: 500px
+}
+
+.item div{
+    padding: 10px;
+    font-size: 30px;
+}
+
+
+.item div.title{
+    padding: 5px;
+    height: 50px;
+    width:1300px;
+    font-size: 50px;
+}
+
+.button {
+    border: #05386B 5px solid;
+    color: #524f4e;
+    background: white;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+    text-decoration: none;
+    display: inline-block;
+    width: 180px;
+    height: 65px;
+    line-height: 60px;
+    font-family: 'IBM Plex Serif', sans-serif;
+    font-size: 28px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.button:hover {
+  background: #05386B;
+  box-shadow: 0 7px 20px #05386B;
+  color: white;
+  transform: translateY(-2px);
+}

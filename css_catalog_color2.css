@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap');
+
+
+.catalog_item{
+    background: #1F2833;
+    outline: 5px #66FCF1 solid;
+}
+
+.catalog_title{
+    background: #1F2833;
+    outline: 5px #66FCF1 solid;
+    margin: auto;
+    text-align: center;
+    font-size: 40px;
+    width: 50%;
+    margin-top: 20px;
+}
+
+
+.catalog_item:hover{
+    box-shadow: 0 0 30px #66FCF1;
+}
+
+.button {
+    border: #66FCF1 5px solid;
+    color: #524f4e;
+    background: white;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+}
+
+.button:hover {
+  background: #66FCF1;
+  box-shadow: 0 7px 20px #66FCF1;
+  color: white;
+  transform: translateY(-2px);
+}
