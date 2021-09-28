@@ -1,7 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap');
 
+html {
+    height: 100%;
+  }
 
 body{
+    margin:0;
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
     background-color:  #EDF5E1;
 }
 

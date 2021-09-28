@@ -2,7 +2,7 @@
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     padding: 10px;
-    border:steelblue 3px solid;
+    border:#05386B 3px solid;
     width: 400px;
     height: 600px;
 }
@@ -12,3 +12,4 @@
     width:1500px;
     margin: auto;
 }
+
