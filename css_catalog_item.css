@@ -44,7 +44,7 @@
 }
 
 .button:hover {
-  background: #05386B;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(19,80,200,1) 59%, rgba(0,212,255,1) 100%);
   box-shadow: 0 7px 20px #05386B;
   color: white;
   transform: translateY(-2px);
