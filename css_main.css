@@ -34,3 +34,21 @@
     float: left;
 }
 
+
+@media screen and (max-width: 1024px) {
+    .header .header_text{
+        font-size: 24px;
+        padding: 16px;
+        text-decoration: none;
+        color: red;
+        padding-bottom: 0px;
+    }
+    
+    .header {
+        text-align: left;
+    }
+
+    .header img{
+        display: none;
+    }
+}
