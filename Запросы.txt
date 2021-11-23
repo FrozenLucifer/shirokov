@@ -1,0 +1,15 @@
+#Самый новый пользователь
+SELECT name from users order by registration_date limit 1
+
+#Количество товаров
+SELECT count(*) from item_list
+
+#ЭТОТ ТОВАР ЗАКОНЧИЛСЯ БЕДА
+SELECT item_id, name from item_list where count = 0;
+
+#Перевод в нормальное времяисчисление
+UPDATE users SET registration_date = SUBSTR(registration_date, 7, 4) || '-' || SUBSTR(registration_date, 4, 2) || '-' ||
+SUBSTR(registration_date, 1, 2);
+
+#Уникальные года регистрации(После перевода)
+SELECT DISTINCT(SUBSTR(registration_date, 1, 4)) from users
