@@ -1,0 +1,8 @@
+#все товары по номеру телефона
+select * from shoping_cart where user_id = (select user_id from users where phone = '+1234(777)-1-1')
+
+#какие категории покупал пользователь
+select DISTINCT category_id from item_category JOIN shoping_cart where item_category.item_id = shoping_cart.item_id and shoping_cart.user_id=1
+
+#кто покупал эту категорию
+select user_id, name from users Join shoping_cart ON users.user_id = shoping_cart.user_id where shoping_cart.item_id = (select item_id from item_category where item_category.category_id = 1)
