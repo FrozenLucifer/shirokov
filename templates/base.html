@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    {% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css.css') }}" />
+    <title>{% block title %}{% endblock %} - My Webpage</title>
+    {% endblock %}
+</head>
+<body>
+    <ul class="header">
+        {% block header %}
+        <li> <a href="/">
+            <img src="{{ url_for('static', filename='pictures/stone.png') }}"/>
+            </a></li>
+        <li> <a class = "header_text" href="/">
+                Главная
+            </a> </li>
+        <li> <a class = "header_text" href="/catalog">
+                Каталог
+            </a> </li>
+        <li> <a class = "header_text" href="/about">
+                О нас
+            </a> </li>
+        {% endblock %}
+    </ul>
+
+
+    <div id="content">{% block content %}{% endblock %}</div>
+
+
+    <footer>
+        {% block footer %}
+        &copy; ООО "КАМЕННЫЙ РАЙ" 2022
+        {% endblock %}
+    </footer>
+</body>
+</html>

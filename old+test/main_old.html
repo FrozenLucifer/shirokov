@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <head class = "site">
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="css.css">
-    <link rel="stylesheet" type="text/css" href="css_main.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css_main.css') }}">
     <title>КАМНИ</title>
 </head>
 
@@ -10,12 +10,13 @@
 <body>
     <ul class="header">
         <li> <a href="main.html">
-            <img src="pictures/stone.png"/> 
+
+            <img src="{{ url_for('static', filename='pictures/stone.png') }}"/>
             </a></li>
         <li> <a class = "header_text" href="main.html">
                 Главная
             </a> </li>
-        <li> <a class = "header_text" href="catalog.html">
+        <li> <a class = "header_text" href="catalog">
                 Каталог
             </a> </li>
         <li> <a class = "header_text" href="about.html">
@@ -27,8 +28,6 @@
         <h1 class="text_normal">
             МЫ ПРАДАЕМ КАМНИ ХАРОШИЕ КЛАССНЫЕ КАМНИ НА ЛЮБОЙ ВКУС И ЦВЕТ ФЛОМАСТЕРОВ НЕТ А НА НЕТ И СУДА НЕТ И МНОГО РАЗНЫХ КАМЕЙ РАЗНЫХ РАЗМЕРОВ!!!!!!!!!!!!!!!!!
         </h1>
-        <a href="no1.html"><img src="pictures/big_rock.jpg" 
-            alt="panther" width="300px"> </a>
 
         <div class="news_item">
             <img src="pictures/news_1.jpeg"/>

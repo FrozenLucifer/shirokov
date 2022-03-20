@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>МНОГО КАМНЕЙ</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css_catalog.css') }}">
+</head>
+<body>
+    
+</body>
+    <ul class="header">
+        <li> <a href="main.html">
+            <img src="pictures/stone.png"/> 
+            </a></li>
+        <li> <a class = "header_text" href="/">
+                Главная
+            </a> </li>
+        <li> <a class = "header_text" href="catalog">
+                Каталог
+            </a> </li>
+        <li> <a class = "header_text" href="about">
+                О нас
+            </a> </li>
+    </ul>
+
+
+    <div class="catalog">
+
+        {% for item in items %}
+            <div class="catalog_item">
+                <img src="{{ url_for('static', filename='/pictures/' + item.image) }}"/>
+                <div class="title">  {{item.name}} </div>
+                <a class="button" href="{{item/" + item.id}}"> Купить </a>
+            </div>
+        {% endfor %}
+
+    </div>
+    <footer>
+        ООО "КАМЕННЫЙ РАЙ" 2022
+    </footer>
+</body>

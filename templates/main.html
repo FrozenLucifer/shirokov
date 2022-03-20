@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}Каталог{% endblock %}
+{% block head %}
+    {{ super() }}
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css_main.css') }}">
+{% endblock %}
+{% block content %}
+    <h1 class="text_normal">
+        МЫ ПРАДАЕМ КАМНИ ХАРОШИЕ КЛАССНЫЕ КАМНИ НА ЛЮБОЙ ВКУС И ЦВЕТ ФЛОМАСТЕРОВ НЕТ А НА НЕТ И СУДА НЕТ И МНОГО РАЗНЫХ КАМЕЙ РАЗНЫХ РАЗМЕРОВ!!!!!!!!!!!!!!!!!
+    </h1>
+    {% for new in news %}
+    <div class="news_item">
+        <img src="{{ url_for('static', filename='/pictures/' + new.image) }}"/>
+        <div class="title"> {{new.title}}</div>
+        <div class="text"> {{new.text}}</div>
+    </div>
+    {% endfor %}
+
+    <div class="news_item">
+        <img src="{{ url_for('static', filename='/pictures/que.png') }}"/>
+        <div class="title"> Новостей больше нет!!!</div>
+        <div class="text"> БУДУТ!</div>
+    </div>
+
+{% endblock %}

@@ -1,34 +1,210 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c0c3255-2c2d-4f26-9370-483a7ea886cb" name="Default Changelist" comment="" />
+    <list default="true" id="0c0c3255-2c2d-4f26-9370-483a7ea886cb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/flaskpy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/init.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old+test/catalog_old_template.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shopdb.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/pictures/news_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/about.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/catalog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/item.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/не сайт а всякое другое/shop.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/old+test/about_old2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css_1.css" beforeDir="false" afterPath="$PROJECT_DIR$/old+test/css_1.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css_about.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css_about.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css_catalog.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css_catalog.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css_catalog_item.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css_catalog_item.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css_main.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css_main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/databaseXXX.sql" beforeDir="false" afterPath="$PROJECT_DIR$/old+test/databaseXXX.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/old+test/main_old.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miro.html" beforeDir="false" afterPath="$PROJECT_DIR$/не сайт а всякое другое/miro.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/no1.html" beforeDir="false" afterPath="$PROJECT_DIR$/old+test/no1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pictures/big_rock.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/pictures/big_rock.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pictures/disel.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/pictures/disel.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pictures/dwayne1.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/pictures/dwayne1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pictures/dwayne2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/pictures/dwayne2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pictures/dwayne3.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/pictures/dwayne3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pictures/dwayne4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/pictures/dwayne4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pictures/dwayne5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/pictures/dwayne5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pictures/dwayne6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/pictures/dwayne6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pictures/dwayne7.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/pictures/dwayne7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pictures/dwayne_art.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/pictures/dwayne_art.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pictures/news_1.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/static/pictures/news_1.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pictures/que.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/pictures/que.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pictures/rock1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/pictures/rock1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pictures/rock2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/pictures/rock2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pictures/rock3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/pictures/rock3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pictures/rock4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/pictures/rock4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pictures/stone.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/pictures/stone.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pictures/walt.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/pictures/walt.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rock1.html" beforeDir="false" afterPath="$PROJECT_DIR$/old+test/rock1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rock2.html" beforeDir="false" afterPath="$PROJECT_DIR$/old+test/rock2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rock3.html" beforeDir="false" afterPath="$PROJECT_DIR$/old+test/rock3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rock4.html" beforeDir="false" afterPath="$PROJECT_DIR$/old+test/rock4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/old+test/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unittesti.py" beforeDir="false" afterPath="$PROJECT_DIR$/не сайт а всякое другое/unittesti.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Запросы 2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/не сайт а всякое другое/Запросы 2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Запросы.txt" beforeDir="false" afterPath="$PROJECT_DIR$/не сайт а всякое другое/Запросы.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="1y4xYOQO6WyNHTmcuDvjzJEgEKq" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/pictures" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\andre\Documents\GitHub\shirokov\static\pictures" />
       <recent name="C:\Users\andre\Documents\GitHub\shirokov" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\andre\Documents\GitHub\shirokov\static" />
+      <recent name="C:\Users\andre\Documents\GitHub\shirokov\static\pictures" />
+      <recent name="C:\Users\andre\Documents\GitHub\shirokov\old+test" />
+      <recent name="C:\Users\andre\Documents\GitHub\shirokov\не сайт а всякое другое" />
+      <recent name="C:\Users\andre\Documents\GitHub\shirokov\templates" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.flaskpy">
+    <configuration name="flaskpy" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="shirokov" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/flaskpy.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="orm" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="shirokov" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/orm.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for as.TestBD" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="shirokov" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;as.TestBD&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for as.TestBD.test_3" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="shirokov" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;as.TestBD.test_3&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.flaskpy" />
+        <item itemvalue="Python.orm" />
+        <item itemvalue="Python tests.Python tests for as.TestBD" />
+        <item itemvalue="Python tests.Python tests for as.TestBD.test_3" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
-  <component name="WindowStateProjectService">
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1631538677230">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1631538677230" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <created>1644351752641</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1644351752641</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

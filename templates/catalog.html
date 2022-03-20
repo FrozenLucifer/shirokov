@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}Каталог{% endblock %}
+{% block head %}
+    {{ super() }}
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css_catalog.css') }}">
+{% endblock %}
+{% block content %}
+    <div class="catalog">
+
+        {% for item in items %}
+            <div class="catalog_item">
+                <img src="{{ url_for('static', filename='/pictures/' + item.image) }}"/>
+                <div class="title">  {{item.name}} </div>
+                <a class="button" href="item/{{item.id}}"> Купить </a>
+            </div>
+        {% endfor %}
+
+    </div>
+{% endblock %}
