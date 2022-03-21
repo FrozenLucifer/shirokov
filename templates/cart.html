@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}Корзина{% endblock %}
+
+{% block head %}
+    {{ super() }}
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css_cart.css') }}">
+{% endblock %}
+
+{% block content %}
+    {% if not cart %}
+        Корзина пуста ужас! ((((
+    {% endif %}
+    {% for item in cart %}
+    <div class="cart_item">
+        <img src="{{ url_for('static', filename='/pictures/' + item[0].image) }}"/>
+        <div class="title">  {{item[0].name}} </div>
+        <h>{{item[1].count}} штук</h>
+        <form method="post">
+            <input type="submit" class="btn-delete" name="delete" value="X" />
+            <input type="hidden" class="btn-delete" name="id" value="{{item[1].id}}" />
+        </form>
+    </div>
+    {% endfor %}
+{% endblock %}

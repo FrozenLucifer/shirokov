@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% block title %}Каталог{% endblock %}
+{% block title %}{{item.name}}{% endblock %}
 {% block head %}
     {{ super() }}
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -7,8 +7,36 @@
 {% endblock %}
 {% block content %}
     <div class="item">
-        <img src="{{ url_for('static', filename='/pictures/' + item.image) }}"/>
-        <div class="main">
+        <div class="left">
+            <img src="{{ url_for('static', filename='/pictures/' + item.image) }}"/>
+            <div>Категории:
+                {% for c in categories %}
+                        <form method="post" class="cats" style='display:inline;'>
+                            <span>{{c.name}}
+                            {% if session['status'] == "admin" %}
+                                <input type="submit" class="btn-delete" name="delete" value="X" />
+                                <input type="hidden" class="btn-delete" name="type" value="minus_cat" />
+                                <input type="hidden" class="btn-delete" name="id" value="{{c.id}}" />
+                            {% endif %}</span>
+                        </form>
+                {% endfor %}
+                {% if session['status'] == "admin" %}
+                <div class="dropdown">
+                    <p class="plus dropbtn" >+</p>
+                    <div class="dropdown-content">
+                        {% for c in all_categories %}
+                            <form method="post">
+                                <input type="submit" class="btn-delete" name="delete" value="{{c.name}}" />
+                                <input type="hidden" class="btn-delete" name="type" value="plus_cat" />
+                                <input type="hidden" class="btn-delete" name="id" value="{{c.id}}" />
+                            </form>
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+        <div class="right">
             <div class="title">{{item.name}}</div>
             <div> {{item.desc}}!</div>
             <div> ЦВЕТ: {{item.color}}</div>
@@ -18,7 +46,11 @@
             {% if item.count==0 %}
                 <div class="no"> НЕТВ НАЛИЧИИ ХНЫК ХНЫК</div>
             {% endif %}
-            <button type="button" class="btn btn-primary btn-lg">Купить</button>
+            <form method="post">
+                <input type="submit" class="btn btn-primary btn-lg" name="buy" value="В корзину" />
+                <input type="text" class="quantity" value="1" name="count">
+                <input type="hidden" class="btn-delete" name="type" value="buy" />
+            </form>
         </div>
     </div>
 

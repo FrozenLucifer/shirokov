@@ -1,5 +1,6 @@
+import hashlib
+from datetime import datetime
 from init import db
-
 
 
 class Users(db.Model):
@@ -9,7 +10,12 @@ class Users(db.Model):
     email = db.Column(db.String(80), unique=True)
     reg_date = db.Column(db.DateTime)
     b_date = db.Column(db.DateTime)
+    password = db.Column(db.String(256), unique=True, nullable=False)
+    status = db.Column(db.String(80), unique=True)
     cart = db.relationship('Cart_record')
+
+    def validate(self, password):
+        return self.password == hashlib.md5(password.encode('utf8')).hexdigest()
 
 
 Item_Categories = db.Table(
@@ -38,7 +44,7 @@ class Items(db.Model):
     mass = db.Column(db.String(80))
     taste = db.Column(db.String(80))
     cost_text = db.Column(db.String(80))
-    categories = db.relationship('Categories', secondary=Item_Categories, backref=db.backref('items', lazy=False))
+    categories = db.relationship('Categories', secondary=Item_Categories, backref=db.backref('Items', lazy=False))
 
     def __repr__(self):
         return f'[{self.id}] {self.name}'
@@ -90,15 +96,9 @@ x.categories.append(c1)
 print(x.categories)'''
 
 if __name__ == '__main__':
-    id = 4
-    item = Items.query.filter_by(id=id).one()
-    print(item)
-
+    pass
 
 db.session.commit()
-
-
-
 
 '''
 CREATE TABLE categoryes (category_id INTEGER PRIMARY KEY UNIQUE, category_name TEXT NOT NULL);

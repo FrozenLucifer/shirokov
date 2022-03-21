@@ -1,21 +1,30 @@
-.item div.main{
+.item div.right{
     display: inline-block;
     height: 500px;
-    width:800px
+
+    grid-column: 2;
+}
+
+.item div.left{
+    grid-column: 1;
 }
 
 .item img{
-    border: 10px transparent
-     solid;
+    border: 10px transparent solid;
     float: left;
     width: 500px
+}
+
+.item{
+    padding: 10px;
+    font-size: 30px;
+    display: grid;
 }
 
 .item div{
     padding: 10px;
     font-size: 30px;
 }
-
 
 .item div.title{
     padding: 5px;
@@ -26,4 +35,19 @@
 
 .no{
     color: #FF0000;
+}
+
+.cats{
+    white-space: nowrap;
+    padding: 6px;
+    margin: 5px;
+    font-size: 20px;
+    border: black solid 2px;
+    border-radius: 13px;
+    
+}
+
+.plus {
+font-size: 20px;
+color: red;
 }

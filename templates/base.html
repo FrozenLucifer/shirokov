@@ -12,6 +12,25 @@
         <li> <a href="/">
             <img src="{{ url_for('static', filename='pictures/stone.png') }}"/>
             </a></li>
+
+        <li>
+        {% if not session['name'] %}
+            <a href="/login" class="login header_text" >Войти</a>
+        {% else %}
+            <div class="dropdown">
+                <a href="/profile" class="login header_text dropbtn" >[{{session['name']}}]</a>
+                <div class="dropdown-content">
+                  <a href="/profile">Профиль</a>
+                  <a href="/cart">Корзина</a>
+                  <a href="/logout">Выйти</a>
+                </div>
+            </div>
+
+        {% endif %}
+        </li>
+
+
+          
         <li> <a class = "header_text" href="/">
                 Главная
             </a> </li>
