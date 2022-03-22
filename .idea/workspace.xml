@@ -5,23 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c0c3255-2c2d-4f26-9370-483a7ea886cb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/static/css_cart.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css_login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/cart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/profile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/create.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flaskpy.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskpy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init.py" beforeDir="false" afterPath="$PROJECT_DIR$/init.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orm.py" beforeDir="false" afterPath="$PROJECT_DIR$/orm.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shopdb.db" beforeDir="false" afterPath="$PROJECT_DIR$/shopdb.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css_catalog.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css_catalog.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css_catalog_item.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css_catalog_item.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/item.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/item.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,11 +49,12 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/pictures" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\andre\Documents\GitHub\shirokov\templates" />
       <recent name="C:\Users\andre\Documents\GitHub\shirokov\static\pictures" />
       <recent name="C:\Users\andre\Documents\GitHub\shirokov" />
     </key>

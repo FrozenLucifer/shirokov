@@ -1,3 +1,5 @@
+import datetime
+
 from flask import request, render_template, escape, session, redirect, url_for
 from orm import *
 from init import app
@@ -9,7 +11,6 @@ def workers_list_func(lst, n=4):
 
 
 
-@app.route('/main')
 @app.route('/')
 def main_page():
     return render_template("main.html", news=News.query.all())
@@ -31,6 +32,21 @@ def profile():
     return render_template("profile.html")
 
 
+@app.route('/create', methods=['GET', 'POST'])
+def create_account():
+    if request.method == 'POST':
+        username = request.form.get('name')
+        password1 = request.form.get('password1')
+        password2 = request.form.get('password2')
+        if not Users.query.filter_by(name=username).first():
+            if password1 == password2:
+                new_user = Users(name=username, password=hashlib.md5(password1.encode('utf8')).hexdigest(), reg_date=datetime.now(), status="normal")
+                db.session.add(new_user)
+                db.session.commit()
+                return redirect(url_for('login'), code=301)
+    return render_template('create.html')
+
+
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
@@ -40,7 +56,7 @@ def login():
             if Users.query.filter_by(name=username).one().validate(password):
                 session['name'] = username
                 session['status'] = Users.query.filter_by(name=username).one().status
-                return redirect(url_for('main'), code=301)
+                return redirect(url_for('main_page'), code=301)
         except:
             pass
 

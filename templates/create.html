@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}Войти{% endblock %}
+{% block head %}
+    {{ super() }}
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css_login.css') }}">
+{% endblock %}
+{% block content %}
+<div class="body">
+    <form method="POST" class="form">
+        <input type="text" name="name" class="input" placeholder="Ваш ник">
+        <input type="password" name="password1" class="input" placeholder="Придумайте пароль">
+        <input type="password" name="password2" class="input" placeholder="Повторите пароль">
+        <input type="submit" value="Создать" class="button">
+    </form>
+    <a href="/login">Уже есть аккаунт?</a>
+</div>
+{% endblock %}
