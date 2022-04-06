@@ -79,11 +79,21 @@ def cart_page():
     return render_template('cart.html', cart=cart)
 
 
-@app.route('/about')
+@app.route('/about', methods=['GET', 'POST'])
 def about():
+    if request.method == 'POST':
+        text = request.form.get('review')
+        new_review = Reviews(user_id=Users.query.filter_by(name=session['name']).one().id, text=text, time=datetime.now())
+        db.session.add(new_review)
+        db.session.commit()
+
+        print('Error about')
     workers = Workers.query.all()
     workers_list = workers_list_func(workers)
-    return render_template("about.html", workers_list=workers_list)
+    revs = []
+    for i in Reviews.query.all():
+        revs.append((Users.query.filter_by(id=i.user_id).one().name, i))
+    return render_template("about.html", workers_list=workers_list, reviews=revs)
 
 
 def add_to_cart(item_id, user_id, count):

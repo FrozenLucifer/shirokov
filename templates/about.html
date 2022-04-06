@@ -34,14 +34,20 @@
     <h1>
         ОСТАВИТЬ ХОРООШТИЙ ОТЗЫВ)))):!!!
     </h1>
-    <form action="#">
-        <legend>кТО ТЫ?)</legend>
-        А КАК ТЕБЯЧ ЗАВУТ??? <input type="text" name="name" placeholder="ИМСЯ!"> <br>
-        ГАВАРИ ПОЧТУ <input type="email" name="email" placeholder="ТВОЯ ПОЧТА!!! СБДА!!!"><br>
+    <form  method="POST">
+        <legend>ТЫ -- {% if not session['name'] %} НЕ ВОШЕЛ В АККАУНТ {% else %} {{session['name']}} {% endif %}</legend>
         ЧТО ПОНРАВИЛОСТЬ!?(ВСЁ!)))) <br>
         <textarea name="review" id="" cols="68" rows="10"></textarea>
         <br>
         <input type="submit">
         <input type="reset">
      </form>
+
+    {% for rev in reviews %}
+     <div class="review">
+         <div class="title">  {{rev[0]}} </div>
+         <div class="text">  {{rev[1].text}} </div>
+         <div class="text">  {{rev[1].time}} </div>
+     </div>
+    {% endfor %}
 {% endblock %}

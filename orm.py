@@ -13,6 +13,7 @@ class Users(db.Model):
     password = db.Column(db.String(256), unique=True, nullable=False)
     status = db.Column(db.String(80), unique=True)
     cart = db.relationship('Cart_record')
+    reviews = db.relationship('Reviews')
 
     def validate(self, password):
         return self.password == hashlib.md5(password.encode('utf8')).hexdigest()
@@ -68,6 +69,15 @@ class News(db.Model):
     title = db.Column(db.String(100), nullable=False)
     text = db.Column(db.String(250), nullable=False)
     image = db.Column(db.String(40))
+
+
+class Reviews(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    user_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False)
+    text = db.Column(db.String(400), nullable=False)
+    time = db.Column(db.DateTime)
+
+'''我需要大一点儿'''
 
 
 db.create_all()

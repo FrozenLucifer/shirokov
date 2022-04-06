@@ -13,3 +13,8 @@
     margin: auto;
 }
 
+
+.review {
+    border: black 3px solid;
+    margin: 5px;
+}
